@@ -1,4 +1,4 @@
-## urban-mobility-ontology
+## Urban-Mobility-Ontology
 
 ## Overview
 This repository provides an OWL/RDF ontology for urban mobility and public transportation, with a specific focus on Demand-Responsive Transport (DRT) services.
