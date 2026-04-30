@@ -1,0 +1,1800 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation"
+     xmlns:geo="http://www.opengis.net/ont/geosparql#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:GTFS="http://www.semanticweb.org/hp/ontologies/2024/transport#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/"
+     xmlns:Infrastructure="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#">
+        <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#ehContains -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#ehContains">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#ehCoveredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#ehCoveredBy">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#ehCovers -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#ehCovers">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#ehInside -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#ehInside">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#ehMeet -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#ehMeet">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#ehOverlap -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#ehOverlap">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#rcc8ec -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#rcc8ec">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#rcc8ntpp -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#rcc8ntpp">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#rcc8ntppi -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#rcc8ntppi">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#rcc8po -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#rcc8po">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#rcc8tpp -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#rcc8tpp">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#rcc8tppi -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#rcc8tppi">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfContains -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfContains">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfCrosses -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfCrosses">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfDisjoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfDisjoint">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfIntersects -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfIntersects">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfOverlaps -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfOverlaps">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfTouches -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfTouches">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfWithin -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfWithin">
+        <rdfs:domain rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Blocks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Blocks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Obstacles"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:comment>An obstacle blocks a street.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#EquippedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#EquippedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_control"/>
+        <rdfs:comment>An Road segment is equipped by a traffic control (sings or lights)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#HasIntersection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#HasIntersection">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Intersection"/>
+        <rdfs:comment>A street has an intersection</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#HasSegments -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#HasSegments">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#IsPartOfStreet"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment"/>
+        <rdfs:comment>A Street has Road Segment</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#IsPartOfNeighborhood -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#IsPartOfNeighborhood">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfWithin"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Neighborhood"/>
+        <rdfs:comment>A street is part of neighborhood</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#IsPartOfStreet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#IsPartOfStreet">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfWithin"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:comment>A road segment is a part of streets</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#LocatedOnStreet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#LocatedOnStreet">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_markings"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment"/>
+        <rdfs:comment>A road markings is located on  a streets.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#RondAboutEquippedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#RondAboutEquippedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#RondAbout"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_control"/>
+        <rdfs:comment>RondAbout Equipped by a traffic control</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#RunsOnStreet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#RunsOnStreet">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#vehicle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:comment>shuttle run on a street</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#WalkOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#WalkOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Pedestrians"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Sidewalk"/>
+        <rdfs:comment>Pedestrians walk on the sidewalk</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#adjacentMunicipalityTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#adjacentMunicipalityTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfTouches"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Municipalities"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Municipalities"/>
+        <rdfs:comment>one municipality is adjacent to another municipality</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#adjacentNeighborhoodTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#adjacentNeighborhoodTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfTouches"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Neighborhood"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Neighborhood"/>
+        <rdfs:comment>one neighborhood is adjacent to another neighborhood</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#adjacentStreetTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#adjacentStreetTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfTouches"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:comment>one street is adjacent to another street</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#attached_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#attached_to">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfIntersects"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Sidewalk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:comment>sidewalk attached to a street</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#connectedToIntersection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#connectedToIntersection">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfTouches"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Intersection"/>
+        <rdfs:comment>Road segment is conected to intersection</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#frontsOnStreet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#frontsOnStreet">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Building"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:comment>building fronts on the street</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#hasSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#hasSensor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Intersection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_sensor"/>
+        <rdfs:comment>A intersection has a sensor</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#hasTrafficControl -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#hasTrafficControl">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Intersection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_control"/>
+        <rdfs:comment>Intersection has a traffic control</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#isPartOfMunicipalities -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#isPartOfMunicipalities">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfWithin"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Neighborhood"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Municipalities"/>
+        <rdfs:comment>neighborhood is part of municipalities</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#locatedInNeighborhood -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#locatedInNeighborhood">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfWithin"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Neighborhood"/>
+        <rdfs:comment>different zone is located in a neighborhood</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#move_around -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#move_around">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#bicycle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Bicycle_lane"/>
+        <rdfs:comment>a bicycle move arond  the bicycle lane</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#parked_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#parked_in">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#vehicle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Parking"/>
+        <rdfs:comment>a vehicle parked in a parking zone</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#AdressBat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#AdressBat">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Adress for building</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Category_poi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Category_poi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#AreaOfInterest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>the category of point of interest</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Code_Postal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Code_Postal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Municipalities"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>postal code of the municipality</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#CurvatureSegment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#CurvatureSegment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>the courvature of the segment</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#ID_Capteur -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#ID_Capteur">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>sensor identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#IdIntersection -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#IdIntersection">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Intersection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>intersection identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#IdMarquage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#IdMarquage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_markings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Road Marking identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#IdRondAbout -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#IdRondAbout">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#RondAbout"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>rondabout identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#IdSecteur -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#IdSecteur">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Industrial_Zone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>industrial zone identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#IdSegment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#IdSegment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Road Segment identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Id_Feux -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Id_Feux">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_light"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>light identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Id_pan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Id_pan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>sings identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Id_rue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Id_rue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>street identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#LanesBackward -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#LanesBackward">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Lane backward direction for the road segment</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#LanesForward -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#LanesForward">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Lane forward direction for the road segment</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Largeur -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Largeur">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>Width for a street</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#LargeurSegment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#LargeurSegment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>Width for road segments</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#LatitudeR -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#LatitudeR">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#RondAbout"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>latitude coordinate point of the rondabout</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Latitude_C -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Latitude_C">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Municipalities"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>latitude coordinate point of the municipality</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Latitude_Cap -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Latitude_Cap">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>latitude coordinate point of the sensor</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Latitude_Feu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Latitude_Feu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_light"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>latitude coordinate point of the light</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Latitude_I -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Latitude_I">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Intersection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>latitude coordinate point of the intersection</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Latitude_Q -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Latitude_Q">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Neighborhood"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>latitude coordinate point of the neighborhood</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Latitude_pan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Latitude_pan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>latitude coordinate point of the sings</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Latitude_poi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Latitude_poi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#AreaOfInterest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>latitude coordinate point of the area of interest</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Latitude_rech -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Latitude_rech">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Charging_station"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>latitude coordinate point of the charging station</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#LonObs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#LonObs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Obstacles"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>longitude coordinate point of the obstacle</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longeursegment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longeursegment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>length of the road segment</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#LongitudeMarquage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#LongitudeMarquage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_markings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>longitude coordinate point of the road marking</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#LongitudeR -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#LongitudeR">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#RondAbout"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>longitude coordinate point of the rondabout</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longitude_C -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longitude_C">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Municipalities"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>longitude coordinate point of the municipality</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longitude_Cap -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longitude_Cap">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>longitude coordinate point of the sensor</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longitude_Feu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longitude_Feu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_light"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>longitude coordinate point of the light</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longitude_I -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longitude_I">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Intersection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>longitude coordinate point of the intersection</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longitude_Q -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longitude_Q">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Neighborhood"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>longitude coordinate point of the neighborhood</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longitude_pan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longitude_pan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>longitude coordinate point of the signs</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longitude_poi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longitude_poi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#AreaOfInterest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>longitude coordinate point of the area of interest</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longitude_rech -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longitude_rech">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Charging_station"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>longitude coordinate point of the charging station</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longueur -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Longueur">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>length of the street</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Nbr_lane -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Nbr_lane">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>number of lane on the street</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#NomBat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#NomBat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>name of building</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#NomEsp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#NomEsp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#CommercialArea"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>name of comercial area</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#NomSecteur -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#NomSecteur">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Industrial_Zone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>name of the industrial zone</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Nom_C -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Nom_C">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Municipalities"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>name of municipality</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Nom_Q -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Nom_Q">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Neighborhood"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>name of the neighborhood</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Nom_poi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Nom_poi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#AreaOfInterest"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>name of the area of interest</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Nom_rech -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Nom_rech">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Charging_station"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>name of charging station</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Nom_rondP -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Nom_rondP">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#RondAbout"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>name of the rondabout</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Nom_rue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Nom_rue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>name of street</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#OneWay -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#OneWay">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>numbre of ways on the  street</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#OrientationDeg -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#OrientationDeg">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>angular direction in space relative to north</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Perimetre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Perimetre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#RondAbout"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>roundabout perimeter</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Rayon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Rayon">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#RondAbout"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>Roundabout radius</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#RoadType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#RoadType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>road type of the street :residential ...</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Sinuosity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Sinuosity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>sinuosity value of street</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#TypeBat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#TypeBat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>building type , school , hospital...</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#TypeObs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#TypeObs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Obstacles"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>obstacle type</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Type_Capt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Type_Capt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>sensor type</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Type_pan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Type_pan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_signs"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>circulation signs type</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Typemarquage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Typemarquage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_markings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>road marking type</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#batteryLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#batteryLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#DRT_Shuttle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>Battrey level for electric vehicle</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#coordBegin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#coordBegin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#wktLiteral"/>
+        <rdfs:comment>starting coordinate point of the streets</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#coordEnd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#coordEnd">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#wktLiteral"/>
+        <rdfs:comment>street end coordinate point</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#direction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#direction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>direction of road segments</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#isBlocked -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#isBlocked">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indicates whether road segments are blocked or not</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#isComfortable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#isComfortable">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indicates whether segments are comfortable or not</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#isDegraded -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#isDegraded">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>indicates whether segments are degraded  or not</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#latObs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#latObs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Obstacles"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>latitude coordinate point of the obstacle</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#latitudeEsp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#latitudeEsp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#CommercialArea"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>latitude coordinate point of the comercial area</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#latitudeMarquage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#latitudeMarquage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_markings"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>latitude coordinate point of the road marking</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#latitudeSecteur -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#latitudeSecteur">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Industrial_Zone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>latitude coordinate point of the industrial zone</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#longitudeEsp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#longitudeEsp">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#CommercialArea"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>longitude coordinate point of the comercial area</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#longitudeSecteur -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#longitudeSecteur">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Industrial_Zone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>longitude coordinate point of the industrial zone</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#maxSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#maxSpeed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>max speed allowed on a street</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#nbr_branches -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#nbr_branches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#RondAbout"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>number of branches for a roundabout</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#nomVehicule -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#nomVehicule">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#DRT_Shuttle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>name of vehicle</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#numberOfPedestrianCrossings -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#numberOfPedestrianCrossings">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>numbre of pedestrian crossing on the street</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#numberOfRoundabouts -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#numberOfRoundabouts">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>number of rondabout on the street</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#numberOfTurns -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#numberOfTurns">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>number of turns on the street</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#sinuosité -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#sinuosité">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment>sinuosity of road segment</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Type_d&apos;activité -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Type_d&apos;activité">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Industrial_Zone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>activity type of the industrial zone</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Feature -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Feature">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Geometry -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#SpatialObject -->
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#AreaOfInterest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#AreaOfInterest">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Meso"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A functional urban area of interest at meso level.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Arrow_markings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Arrow_markings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_markings"/>
+        <rdfs:comment>Directional arrows painted on the road surface to indicate traffic flow and vehicle movements</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Bicycle_lane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Bicycle_lane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_markings"/>
+        <rdfs:comment>A dedicated lane on the road surface for use by bicycles,marked with specific symbols or signs</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Building">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Micro"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Micro Level: A  structure situated within the streets.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Bus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#vehicle"/>
+        <rdfs:comment>A transport vehicle that travels along a fixed route, used for public or private transit in specific areas</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#CampusArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#CampusArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#AreaOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Cars -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Cars">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#vehicle"/>
+        <rdfs:comment>Motorized vehicles used primarily for personal transportation,  with four wheels.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Charging_station -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Charging_station">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Micro"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Micro level: a specific charging point or station for electric vehicles</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#CityCenter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#CityCenter">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#AreaOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#CommercialArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#CommercialArea">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#AreaOfInterest"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#DRT_Shuttle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#DRT_Shuttle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#vehicle"/>
+        <rdfs:comment>A Demand-responsive transport (DRT) shuttle that provides flexible transit services, allowing users to request rides as needed</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Hospital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Hospital">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Industrial_Zone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Industrial_Zone">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Meso"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Meso Level: An area where specific types of economic activities are concentrated, such as industrial zones</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Intersection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Intersection">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Micro"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Micro Level: A junction where several streets intersect, requiring vehicles and pedestrians to follow signage to navigate the correct direction.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#LeisureArea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#LeisureArea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#AreaOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Lidar_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Lidar_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_sensor"/>
+        <rdfs:comment>A sensor that uses laser light to measure distances and detect objects</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Macro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Macro">
+        <rdfs:comment>Macro modeling that represents municipalities and peri-urban areas, as well as connections with neighboring cities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Meso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Meso">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Higher-level modeling than micro-scale, meaning at the level of neighborhoods or broader areas</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Metro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Metro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Micro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Micro">
+        <rdfs:comment>Detailed modeling at the street level</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Municipalities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Municipalities">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Macro"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>At the macro level, a municipality is a territorial district corresponding to a city</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Neighborhood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Neighborhood">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Meso"/>
+        <rdfs:comment>Meso Level: A defined area that generally includes multiple streets, POIs (Points of Interest), etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Obstacles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Obstacles">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Micro"/>
+        <rdfs:comment>Micro Level: An object or structure on the street that may block or impede the flow of vehicles or pedestrians</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Parking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Parking">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Micro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Parking_markings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Parking_markings">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_markings"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Markings that indicate designated parking spots on the road or in parking lots</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Pedestrian_crossing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Pedestrian_crossing">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_markings"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>road surface markings that indicate safe crossing zones for pedestrians</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Pedestrians -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Pedestrians">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Micro"/>
+        <rdfs:comment>micro level : People walking along the streets or crossing roads, or use a sidewalks</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Radar_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Radar_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_sensor"/>
+        <rdfs:comment>A sensor that uses radio waves to detect the speed and position of vehicles and other objects.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_markings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_markings">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Micro"/>
+        <rdfs:comment>Micro Level: Road surface markings used to direct traffic, including lane lines, crosswalks, and directional arrows.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Road_segment">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Micro"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Micro Level: A segment of road between two points, such as those defined by intersections or road markings.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#RondAbout -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#RondAbout">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Micro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#School -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#School">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Building"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Sidewalk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Sidewalk">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Micro"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A paved pathway adjacent to a street, intended for pedestrian use</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Streets">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Micro"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Micro Level: Describes streets designed for the movement of both vehicles and pedestrians</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_control -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_control">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Micro"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Micro Level: Includes all signs, traffic lights, and road markings used to regulate, warn, or inform drivers and pedestrians about traffic rules</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_light -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_light">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_control"/>
+        <rdfs:comment>Micro Level: A traffic signal that manages vehicle and pedestrian movement by switching between red, yellow, and green lights.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Micro"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:someValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Micro Level: A device used to collect data on vehicle flow, such as speed, traffic volume, or vehicle density on a road.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_signs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_signs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_control"/>
+        <rdfs:comment>Micro Level: Signs displaying traffic information, such as speed limits, restrictions, or directions to follow</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Train -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Train">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Weather_sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Weather_sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Traffic_sensor"/>
+        <rdfs:comment>A sensor that detects and reports weather conditions, such as rain, fog, or wind, which can affect traffic</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#bicycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#bicycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#vehicle"/>
+        <rdfs:comment>A human-powered two-wheeled vehicle commonly used on streets, bike lanes, and sidewalks</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#Micro"/>
+        <rdfs:comment>Motorized or non-motorized transportation devices used on roads for the movement of people or goods.</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
