@@ -57,7 +57,7 @@ The files event_sem.rdf and DisruptiveOntology.rdf describe events and disruptio
 
 This part of the ontology represents: events, disruptive events, event locations, event duration, impacts on trips or infrastructure, etc 
 
-## 5. Spatial and Temporal Models
+## 5. Spatial and Temporal Ontology
 
 The repository also includes reused or aligned ontology files:
 
