@@ -70,7 +70,7 @@ owltime.rdf: temporal representation based on OWL-Time.
 
 2- Open Protégé
 
-3- Load the DRT.RDF file
+3- Load the DRT.rdf file
 
 4- import the other ontology modules: Urban_infrastructure.rdf, DisruptiveOntology.rdf, event_sem.rdf, geo.rdf, owltime.rdf
 
