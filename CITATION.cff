@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Urban-Mobility-Ontology"
+message: "If you use this ontology, please cite it using the metadata from this file."
+authors:
+  - family-names: "El Gadi"
+  - given-names: "Nourelhouda"
+orcid: https://orcid.org/0009-0000-4334-4557
+abstract: "ontology for urban mobility and public transportation, with a focus on Demand-Responsive Transport services."
+repository-code: "https://github.com/NourelhoudaElGadi/urban-mobility-ontology"
+license: "CC-BY-4.0"
