@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1225600379.svg)](https://doi.org/10.5281/zenodo.20054328)
+
 ## Urban-Mobility-Ontology
 
 ## Overview
