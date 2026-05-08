@@ -74,6 +74,6 @@ owltime.rdf: temporal representation based on OWL-Time.
 
 3- Load the DRT.rdf file
 
-4- import the other ontology modules: Urban_infrastructure.rdf, DisruptiveOntology.rdf, event_sem.rdf, geo.rdf, owltime.rdf
+4- import the other ontology modules: Urban_infrastructure.rdf, DisruptiveOntology.rdf, event_sem.rdf, geo.rdf, owltime.rdf, and GTFS.rdf
 
 5- Explore the classes, object properties, data properties, and individuals.
