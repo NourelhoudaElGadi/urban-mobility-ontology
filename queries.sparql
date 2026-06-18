@@ -1,0 +1,147 @@
+###############################################################################
+# Urban Mobility Ontology (DRT) - SPARQL query collection - v1.0.0
+
+###############################################################################
+
+
+# =============================================================================
+# CQ1 - How can a DRT request be represented, with its passenger, origin,
+#        destination, pickup time and drop-off time?  
+# =============================================================================
+PREFIX DRT: <http://www.semanticweb.org/hp/ontologies/2024/6/OnDemand#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?reservation ?passenger ?origin ?destination ?pickupTime ?dropoffTime
+WHERE {
+  ?reservation rdf:type DRT:Reservation ;
+               DRT:hasPassenger ?passenger ;
+               DRT:assigned_to  ?ride .
+  OPTIONAL { ?reservation DRT:selectedPickupTime  ?pickupTime . }
+  OPTIONAL { ?reservation DRT:selectedDropoffTime ?dropoffTime . }
+  ?ride DRT:includesTrip ?trip .
+  OPTIONAL { ?trip DRT:Departs_from ?origin . }
+  OPTIONAL { ?trip DRT:Arrives_at   ?destination . }
+}
+LIMIT 50
+
+
+# =============================================================================
+# CQ2 - Which scheduled route / bus line can serve a given DRT request?
+#        reservation -> ride -> GTFS route       
+# =============================================================================
+PREFIX DRT: <http://www.semanticweb.org/hp/ontologies/2024/6/OnDemand#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?reservation ?ride ?route ?buslineName
+WHERE {
+  ?reservation rdf:type DRT:Reservation ;
+               DRT:assigned_to ?ride .
+  ?ride DRT:operatesOn ?route .
+  OPTIONAL { ?route DRT:buslineName ?buslineName . }
+}
+LIMIT 50
+
+
+# =============================================================================
+# CQ3 - How is a disruptive event represented (type, location, duration,
+#        impact)?   
+# =============================================================================
+PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
+PREFIX dtx: <http://purl.org/td/transportdisruption#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?event ?eventType ?place ?begin ?end ?impact
+WHERE {
+  ?event rdf:type sem:Event .
+  OPTIONAL { ?event sem:eventType         ?eventType . }
+  OPTIONAL { ?event sem:hasPlace          ?place . }
+  OPTIONAL { ?event sem:hasBeginTimeStamp ?begin . }
+  OPTIONAL { ?event sem:hasEndTimeStamp   ?end . }
+  OPTIONAL { ?event dtx:causeOf           ?impact . }
+}
+ORDER BY ?begin
+
+
+# =============================================================================
+# CQ4 - Which DRT reservations are affected by a disruption in a time window?
+#        event -> impact -> trip -> ride <- reservation  
+
+# =============================================================================
+PREFIX DRT: <http://www.semanticweb.org/hp/ontologies/2024/6/OnDemand#>
+PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
+PREFIX dtx: <http://purl.org/td/transportdisruption#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT DISTINCT ?reservation ?ride ?trip ?event ?begin ?end
+WHERE {
+  ?event rdf:type sem:Event ;
+         dtx:causeOf ?impact ;
+         sem:hasBeginTimeStamp ?begin ;
+         sem:hasEndTimeStamp   ?end .
+  ?impact dtx:impactsOn ?trip .
+  ?trip DRT:belongsToRide ?ride .
+  ?reservation DRT:assigned_to ?ride .
+  FILTER ( ?begin >= "2026-04-22T00:00:00"^^xsd:dateTime
+        && ?end   <= "2026-04-23T00:00:00"^^xsd:dateTime )
+}
+
+
+# =============================================================================
+# CQ5 - Which road segments are affected by a traffic event?
+#        place impact -> road segment   
+# =============================================================================
+PREFIX Infrastructure: <http://www.semanticweb.org/hp/ontologies/2024/7/Modélisation#>
+PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
+PREFIX dtx: <http://purl.org/td/transportdisruption#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?event ?placeImpact ?segment ?segmentId
+WHERE {
+  ?placeImpact rdf:type sem:PlaceImpact ;
+               sem:ImpactOnPlace ?segment .
+  OPTIONAL { ?placeImpact dtx:hasCause ?event . }
+  ?segment rdf:type Infrastructure:Road_segment .
+  OPTIONAL { ?segment Infrastructure:IdSegment ?segmentId . }
+}
+
+
+
+# =============================================================================
+# EXTRA 1 - Stops with coordinates and address   
+# =============================================================================
+PREFIX GTFS: <http://www.semanticweb.org/hp/ontologies/2024/transport#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?stop ?name ?lat ?lon ?address
+WHERE {
+  ?stop rdf:type GTFS:Stops .
+  OPTIONAL { ?stop GTFS:stop_name ?name . }
+  OPTIONAL { ?stop GTFS:stop_lat  ?lat . }
+  OPTIONAL { ?stop GTFS:stop_lon  ?lon . }
+  OPTIONAL { ?stop GTFS:adress    ?address . }
+}
+LIMIT 100
+
+
+# =============================================================================
+# EXTRA 2 - Reservations grouped by status
+# =============================================================================
+PREFIX DRT: <http://www.semanticweb.org/hp/ontologies/2024/6/OnDemand#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?status (COUNT(?r) AS ?n)
+WHERE {
+  ?r rdf:type DRT:Reservation ;
+     DRT:status ?status .
+}
+GROUP BY ?status
+ORDER BY DESC(?n)
+
+
+# =============================================================================
+# EXTRA 3 - Passenger profiles
+# =============================================================================
+PREFIX DRT: <http://www.semanticweb.org/hp/ontologies/2024/6/OnDemand#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?passenger ?profile ?isPMR ?gender
+WHERE {
+  ?passenger rdf:type DRT:Passenger .
+  OPTIONAL { ?passenger DRT:UserProfile ?profile . }
+  OPTIONAL { ?passenger DRT:isPMR ?isPMR . }
+  OPTIONAL { ?passenger DRT:gender ?gender . }
+}
+LIMIT 50
